@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="styles/Crypto.css" rel="stylesheet">
+
+    <title>Crypto</title>
+    
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<header class="site-header">
+        <div class ="container">
+            <div class="wrapper">
+                <div class="site-title">
+                    <a href = "Crypto.html">
+                   Crypto Info
+                    </a>
+                </div>
+            </div>
+        </div>			
+	</header>
+    
+    <div class="container">
+        <div class = "row">
+            <div class="col-sm-4">
+                <div class = "d-flex justify-content-center mb-3">
+                    <span>Currency Pair</span>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center mb-1">
+                    <div class = "d-flex row justify-content-between">
+                        <span>Base Currency</span>
+                        <span>Quoted Currency</span>
+                    </div>
+                    
+                </div>
+
+                <div class = "row">
+                    <div class = "col">
+                        <span>EUR</span>
+                    </div>
+
+                    <div class = "col">
+                        <select id="select-cur" class="form-control">
+                            <option selected disabled>Select Quoted Pair</option>
+                            <option value="ALL">ALL</option>
+                            <option value=    "ABC" >    "ABC" </option>
+                            <option value=    "ACP" >    "ACP" </option>
+                            <option value=    "ACT" >    "ACT" </option>
+                            <option value=   "ACT*" >   "ACT*" </option>
+                            <option value=    "ADA" >    "ADA" </option>
+                            <option value=   "ADCN" >   "ADCN" </option>
+                            <option value=    "ADL" >    "ADL" </option>
+                            <option value=    "ADX" >    "ADX" </option>
+                            <option value=    "ADZ" >    "ADZ" </option>
+                            <option value=     "AE" >     "AE" </option>
+                            <option value=    "AGI" >    "AGI" </option>
+                            <option value=    "AIB" >    "AIB" </option>
+                            <option value=  "AIDOC" >  "AIDOC" </option>
+                            <option value=   "AION" >   "AION" </option>
+                            <option value=    "AIR" >    "AIR" </option>
+                            <option value=    "ALT" >    "ALT" </option>
+                            <option value=    "AMB" >    "AMB" </option>
+                            <option value=    "AMM" >    "AMM" </option>
+                            <option value=    "ANT" >    "ANT" </option>
+                            <option value=    "APC" >    "APC" </option>
+                            <option value=   "APPC" >   "APPC" </option>
+                            <option value=    "ARC" >    "ARC" </option>
+                            <option value=   "ARCT" >   "ARCT" </option>
+                            <option value=   "ARDR" >   "ARDR" </option>
+                            <option value=    "ARK" >    "ARK" </option>
+                            <option value=    "ARN" >    "ARN" </option>
+                            <option value= "ASAFE2" > "ASAFE2" </option>
+                            <option value=    "AST" >    "AST" </option>
+                            <option value=    "ATB" >    "ATB" </option>
+                            <option value=    "ATM" >    "ATM" </option>
+                            <option value=   "AURS" >   "AURS" </option>
+                            <option value=    "AVT" >    "AVT" </option>
+                            <option value=    "BAR" >    "BAR" </option>
+                            <option value=   "BASH" >   "BASH" </option>
+                            <option value=    "BAT" >    "BAT" </option>
+                            <option value=    "BAY" >    "BAY" </option>
+                            <option value=    "BBP" >    "BBP" </option>
+                            <option value=    "BCD" >    "BCD" </option>
+                            <option value=    "BCH" >    "BCH" </option>
+                            <option value=    "BCN" >    "BCN" </option>
+                            <option value=   "BCPT" >   "BCPT" </option>
+                            <option value=    "BEE" >    "BEE" </option>
+                            <option value=    "BIO" >    "BIO" </option>
+                            <option value=    "BLC" >    "BLC" </option>
+                            <option value=  "BLOCK" >  "BLOCK" </option>
+                            <option value=    "BLU" >    "BLU" </option>
+                            <option value=    "BLZ" >    "BLZ" </option>
+                            <option value=    "BMC" >    "BMC" </option>
+                            <option value=    "BNB" >    "BNB" </option>
+                            <option value=    "BNT" >    "BNT" </option>
+                            <option value=   "BOST" >   "BOST" </option>
+                            <option value=     "BQ" >     "BQ" </option>
+                            <option value=    "BQX" >    "BQX" </option>
+                            <option value=    "BRD" >    "BRD" </option>
+                            <option value=   "BRIT" >   "BRIT" </option>
+                            <option value=    "BT1" >    "BT1" </option>
+                            <option value=    "BT2" >    "BT2" </option>
+                            <option value=    "BTC" >    "BTC" </option>
+                            <option value=   "BTCA" >   "BTCA" </option>
+                            <option value=   "BTCS" >   "BTCS" </option>
+                            <option value=   "BTCZ" >   "BTCZ" </option>
+                            <option value=    "BTG" >    "BTG" </option>
+                            <option value=   "BTLC" >   "BTLC" </option>
+                            <option value=    "BTM" >    "BTM" </option>
+                            <option value=   "BTM*" >   "BTM*" </option>
+                            <option value=    "BTQ" >    "BTQ" </option>
+                            <option value=    "BTS" >    "BTS" </option>
+                            <option value=    "BTX" >    "BTX" </option>
+                            <option value=  "BURST" >  "BURST" </option>
+                            <option value=   "CALC" >   "CALC" </option>
+                            <option value=    "CAS" >    "CAS" </option>
+                            <option value=    "CAT" >    "CAT" </option>
+                            <option value=   "CCRB" >   "CCRB" </option>
+                            <option value=    "CDT" >    "CDT" </option>
+                            <option value=   "CESC" >   "CESC" </option>
+                            <option value=   "CHAT" >   "CHAT" </option>
+                            <option value=     "CJ" >     "CJ" </option>
+                            <option value=     "CL" >     "CL" </option>
+                            <option value=    "CLD" >    "CLD" </option>
+                            <option value=  "CLOAK" >  "CLOAK" </option>
+                            <option value=   "CMT*" >   "CMT*" </option>
+                            <option value=    "CND" >    "CND" </option>
+                            <option value=    "CNX" >    "CNX" </option>
+                            <option value=    "CPC" >    "CPC" </option>
+                            <option value=  "CRAVE" >  "CRAVE" </option>
+                            <option value=    "CRC" >    "CRC" </option>
+                            <option value=    "CRE" >    "CRE" </option>
+                            <option value=    "CRW" >    "CRW" </option>
+                            <option value=    "CTO" >    "CTO" </option>
+                            <option value=    "CTR" >    "CTR" </option>
+                            <option value=    "CVC" >    "CVC" </option>
+                            <option value=    "DAS" >    "DAS" </option>
+                            <option value=   "DASH" >   "DASH" </option>
+                            <option value=    "DAT" >    "DAT" </option>
+                            <option value=   "DATA" >   "DATA" </option>
+                            <option value=    "DBC" >    "DBC" </option>
+                            <option value=   "DBET" >   "DBET" </option>
+                            <option value=    "DCN" >    "DCN" </option>
+                            <option value=    "DCR" >    "DCR" </option>
+                            <option value=    "DCT" >    "DCT" </option>
+                            <option value=   "DEEP" >   "DEEP" </option>
+                            <option value=   "DENT" >   "DENT" </option>
+                            <option value=    "DGB" >    "DGB" </option>
+                            <option value=    "DGD" >    "DGD" </option>
+                            <option value=    "DIM" >    "DIM" </option>
+                            <option value=   "DIME" >   "DIME" </option>
+                            <option value=    "DMD" >    "DMD" </option>
+                            <option value=    "DNT" >    "DNT" </option>
+                            <option value=   "DOGE" >   "DOGE" </option>
+                            <option value=   "DRGN" >   "DRGN" </option>
+                            <option value=    "DRZ" >    "DRZ" </option>
+                            <option value=    "DSH" >    "DSH" </option>
+                            <option value=    "DTA" >    "DTA" </option>
+                            <option value=     "EC" >     "EC" </option>
+                            <option value=    "EDG" >    "EDG" </option>
+                            <option value=    "EDO" >    "EDO" </option>
+                            <option value=    "EDR" >    "EDR" </option>
+                            <option value=    "EKO" >    "EKO" </option>
+                            <option value=    "ELA" >    "ELA" </option>
+                            <option value=    "ELF" >    "ELF" </option>
+                            <option value=    "EMC" >    "EMC" </option>
+                            <option value=   "EMGO" >   "EMGO" </option>
+                            <option value=    "ENG" >    "ENG" </option>
+                            <option value=    "ENJ" >    "ENJ" </option>
+                            <option value=    "EOS" >    "EOS" </option>
+                            <option value=    "ERT" >    "ERT" </option>
+                            <option value=    "ETC" >    "ETC" </option>
+                            <option value=    "ETH" >    "ETH" </option>
+                            <option value=    "ETN" >    "ETN" </option>
+                            <option value=    "ETP" >    "ETP" </option>
+                            <option value=    "ETT" >    "ETT" </option>
+                            <option value=    "EVR" >    "EVR" </option>
+                            <option value=    "EVX" >    "EVX" </option>
+                            <option value=    "FCT" >    "FCT" </option>
+                            <option value=    "FLP" >    "FLP" </option>
+                            <option value=   "FOTA" >   "FOTA" </option>
+                            <option value=   "FRST" >   "FRST" </option>
+                            <option value=   "FUEL" >   "FUEL" </option>
+                            <option value=    "FUN" >    "FUN" </option>
+                            <option value=   "FUNC" >   "FUNC" </option>
+                            <option value=   "FUTC" >   "FUTC" </option>
+                            <option value=   "GAME" >   "GAME" </option>
+                            <option value=    "GAS" >    "GAS" </option>
+                            <option value=  "GBYTE" >  "GBYTE" </option>
+                            <option value=    "GMX" >    "GMX" </option>
+                            <option value=    "GNO" >    "GNO" </option>
+                            <option value=    "GNT" >    "GNT" </option>
+                            <option value=    "GNX" >    "GNX" </option>
+                            <option value=    "GRC" >    "GRC" </option>
+                            <option value=    "GRS" >    "GRS" </option>
+                            <option value=   "GRWI" >   "GRWI" </option>
+                            <option value=    "GTC" >    "GTC" </option>
+                            <option value=    "GTO" >    "GTO" </option>
+                            <option value=    "GUP" >    "GUP" </option>
+                            <option value=    "GVT" >    "GVT" </option>
+                            <option value=    "GXS" >    "GXS" </option>
+                            <option value=    "HAC" >    "HAC" </option>
+                            <option value=    "HNC" >    "HNC" </option>
+                            <option value=    "HSR" >    "HSR" </option>
+                            <option value=    "HST" >    "HST" </option>
+                            <option value=    "HVN" >    "HVN" </option>
+                            <option value=    "ICN" >    "ICN" </option>
+                            <option value=   "ICOS" >   "ICOS" </option>
+                            <option value=    "ICX" >    "ICX" </option>
+                            <option value=  "IGNIS" >  "IGNIS" </option>
+                            <option value=    "ILC" >    "ILC" </option>
+                            <option value=    "INK" >    "INK" </option>
+                            <option value=    "INS" >    "INS" </option>
+                            <option value=   "INSN" >   "INSN" </option>
+                            <option value=    "INT" >    "INT" </option>
+                            <option value=    "IOP" >    "IOP" </option>
+                            <option value=   "IOST" >   "IOST" </option>
+                            <option value=    "ITC" >    "ITC" </option>
+                            <option value=    "KCS" >    "KCS" </option>
+                            <option value=   "KICK" >   "KICK" </option>
+                            <option value=    "KIN" >    "KIN" </option>
+                            <option value=    "KLC" >    "KLC" </option>
+                            <option value=    "KMD" >    "KMD" </option>
+                            <option value=    "KNC" >    "KNC" </option>
+                            <option value=    "KRB" >    "KRB" </option>
+                            <option value=     "LA" >     "LA" </option>
+                            <option value=   "LEND" >   "LEND" </option>
+                            <option value=    "LEO" >    "LEO" </option>
+                            <option value=  "LINDA" >  "LINDA" </option>
+                            <option value=   "LINK" >   "LINK" </option>
+                            <option value=    "LOC" >    "LOC" </option>
+                            <option value=    "LOG" >    "LOG" </option>
+                            <option value=    "LRC" >    "LRC" </option>
+                            <option value=    "LSK" >    "LSK" </option>
+                            <option value=    "LTC" >    "LTC" </option>
+                            <option value=    "LUN" >    "LUN" </option>
+                            <option value=    "LUX" >    "LUX" </option>
+                            <option value=   "MAID" >   "MAID" </option>
+                            <option value=   "MANA" >   "MANA" </option>
+                            <option value=   "MCAP" >   "MCAP" </option>
+                            <option value=    "MCO" >    "MCO" </option>
+                            <option value=    "MDA" >    "MDA" </option>
+                            <option value=    "MDS" >    "MDS" </option>
+                            <option value=  "MIOTA" >  "MIOTA" </option>
+                            <option value=    "MKR" >    "MKR" </option>
+                            <option value=    "MLN" >    "MLN" </option>
+                            <option value=    "MNX" >    "MNX" </option>
+                            <option value=    "MOD" >    "MOD" </option>
+                            <option value=   "MOIN" >   "MOIN" </option>
+                            <option value=   "MONA" >   "MONA" </option>
+                            <option value=    "MTL" >    "MTL" </option>
+                            <option value=   "MTN*" >   "MTN*" </option>
+                            <option value=    "MTX" >    "MTX" </option>
+                            <option value=    "NAS" >    "NAS" </option>
+                            <option value=    "NAV" >    "NAV" </option>
+                            <option value=    "NBT" >    "NBT" </option>
+                            <option value=    "NDC" >    "NDC" </option>
+                            <option value=   "NEBL" >   "NEBL" </option>
+                            <option value=    "NEO" >    "NEO" </option>
+                            <option value=    "NEU" >    "NEU" </option>
+                            <option value=   "NEWB" >   "NEWB" </option>
+                            <option value=    "NGC" >    "NGC" </option>
+                            <option value=    "NKC" >    "NKC" </option>
+                            <option value=   "NLC2" >   "NLC2" </option>
+                            <option value=    "NMC" >    "NMC" </option>
+                            <option value=    "NMR" >    "NMR" </option>
+                            <option value=   "NULS" >   "NULS" </option>
+                            <option value=    "NVC" >    "NVC" </option>
+                            <option value=    "NXT" >    "NXT" </option>
+                            <option value=    "OAX" >    "OAX" </option>
+                            <option value=  "OBITS" >  "OBITS" </option>
+                            <option value=     "OC" >     "OC" </option>
+                            <option value=    "OCN" >    "OCN" </option>
+                            <option value=    "ODN" >    "ODN" </option>
+                            <option value=     "OK" >     "OK" </option>
+                            <option value=    "OMG" >    "OMG" </option>
+                            <option value=   "OMNI" >   "OMNI" </option>
+                            <option value=    "ORE" >    "ORE" </option>
+                            <option value=   "ORME" >   "ORME" </option>
+                            <option value=    "OST" >    "OST" </option>
+                            <option value=    "OTN" >    "OTN" </option>
+                            <option value=    "OTX" >    "OTX" </option>
+                            <option value=    "OXY" >    "OXY" </option>
+                            <option value=   "PART" >   "PART" </option>
+                            <option value=    "PAY" >    "PAY" </option>
+                            <option value=    "PBT" >    "PBT" </option>
+                            <option value=    "PCS" >    "PCS" </option>
+                            <option value=   "PIVX" >   "PIVX" </option>
+                            <option value=  "PIZZA" >  "PIZZA" </option>
+                            <option value=   "PLBT" >   "PLBT" </option>
+                            <option value=    "PLR" >    "PLR" </option>
+                            <option value=    "POE" >    "POE" </option>
+                            <option value=   "POLY" >   "POLY" </option>
+                            <option value=   "POSW" >   "POSW" </option>
+                            <option value=   "POWR" >   "POWR" </option>
+                            <option value=    "PPC" >    "PPC" </option>
+                            <option value=    "PPT" >    "PPT" </option>
+                            <option value=    "PPY" >    "PPY" </option>
+                            <option value=    "PRC" >    "PRC" </option>
+                            <option value=   "PRES" >   "PRES" </option>
+                            <option value=    "PRG" >    "PRG" </option>
+                            <option value=    "PRL" >    "PRL" </option>
+                            <option value=    "PRO" >    "PRO" </option>
+                            <option value=   "PURA" >   "PURA" </option>
+                            <option value=    "PUT" >    "PUT" </option>
+                            <option value=   "QASH" >   "QASH" </option>
+                            <option value=    "QAU" >    "QAU" </option>
+                            <option value=    "QSP" >    "QSP" </option>
+                            <option value=   "QTUM" >   "QTUM" </option>
+                            <option value=    "QUN" >    "QUN" </option>
+                            <option value=      "R" >      "R" </option>
+                            <option value=  "RBIES" >  "RBIES" </option>
+                            <option value=    "RCN" >    "RCN" </option>
+                            <option value=    "RDD" >    "RDD" </option>
+                            <option value=    "RDN" >    "RDN" </option>
+                            <option value=   "RDN*" >   "RDN*" </option>
+                            <option value=   "REBL" >   "REBL" </option>
+                            <option value=    "REE" >    "REE" </option>
+                            <option value=    "REP" >    "REP" </option>
+                            <option value=    "REQ" >    "REQ" </option>
+                            <option value=    "REV" >    "REV" </option>
+                            <option value=    "RGC" >    "RGC" </option>
+                            <option value=   "RHOC" >   "RHOC" </option>
+                            <option value=   "RIYA" >   "RIYA" </option>
+                            <option value=    "RKC" >    "RKC" </option>
+                            <option value=    "RLC" >    "RLC" </option>
+                            <option value=    "RPX" >    "RPX" </option>
+                            <option value=   "RUFF" >   "RUFF" </option>
+                            <option value=   "SALT" >   "SALT" </option>
+                            <option value=    "SAN" >    "SAN" </option>
+                            <option value=    "SBC" >    "SBC" </option>
+                            <option value=     "SC" >     "SC" </option>
+                            <option value=   "SENT" >   "SENT" </option>
+                            <option value=  "SHIFT" >  "SHIFT" </option>
+                            <option value=    "SIB" >    "SIB" </option>
+                            <option value=  "SMART" >  "SMART" </option>
+                            <option value=   "SMLY" >   "SMLY" </option>
+                            <option value=   "SMT*" >   "SMT*" </option>
+                            <option value=    "SNC" >    "SNC" </option>
+                            <option value=  "SNGLS" >  "SNGLS" </option>
+                            <option value=    "SNM" >    "SNM" </option>
+                            <option value=    "SNT" >    "SNT" </option>
+                            <option value=    "SPK" >    "SPK" </option>
+                            <option value=    "SRN" >    "SRN" </option>
+                            <option value=  "STEEM" >  "STEEM" </option>
+                            <option value=    "STK" >    "STK" </option>
+                            <option value=  "STORJ" >  "STORJ" </option>
+                            <option value=  "STRAT" >  "STRAT" </option>
+                            <option value=    "STU" >    "STU" </option>
+                            <option value=    "STX" >    "STX" </option>
+                            <option value=    "SUB" >    "SUB" </option>
+                            <option value=    "SUR" >    "SUR" </option>
+                            <option value=  "SWFTC" >  "SWFTC" </option>
+                            <option value=    "SYS" >    "SYS" </option>
+                            <option value=   "TAAS" >   "TAAS" </option>
+                            <option value=  "TESLA" >  "TESLA" </option>
+                            <option value=    "THC" >    "THC" </option>
+                            <option value=  "THETA" >  "THETA" </option>
+                            <option value=    "THS" >    "THS" </option>
+                            <option value=    "TIO" >    "TIO" </option>
+                            <option value=    "TKN" >    "TKN" </option>
+                            <option value=    "TKY" >    "TKY" </option>
+                            <option value=    "TNB" >    "TNB" </option>
+                            <option value=    "TNT" >    "TNT" </option>
+                            <option value=    "TOA" >    "TOA" </option>
+                            <option value=    "TRC" >    "TRC" </option>
+                            <option value=   "TRIG" >   "TRIG" </option>
+                            <option value=   "TRST" >   "TRST" </option>
+                            <option value=  "TRUMP" >  "TRUMP" </option>
+                            <option value=    "TRX" >    "TRX" </option>
+                            <option value=    "UBQ" >    "UBQ" </option>
+                            <option value=    "UNO" >    "UNO" </option>
+                            <option value=   "UNRC" >   "UNRC" </option>
+                            <option value=    "UQC" >    "UQC" </option>
+                            <option value=   "USDT" >   "USDT" </option>
+                            <option value=    "UTK" >    "UTK" </option>
+                            <option value=    "UTT" >    "UTT" </option>
+                            <option value=    "VEE" >    "VEE" </option>
+                            <option value=    "VEN" >    "VEN" </option>
+                            <option value=   "VERI" >   "VERI" </option>
+                            <option value=    "VIA" >    "VIA" </option>
+                            <option value=    "VIB" >    "VIB" </option>
+                            <option value=   "VIBE" >   "VIBE" </option>
+                            <option value=  "VOISE" >  "VOISE" </option>
+                            <option value=    "VOX" >    "VOX" </option>
+                            <option value=    "VRS" >    "VRS" </option>
+                            <option value=    "VTC" >    "VTC" </option>
+                            <option value=    "VUC" >    "VUC" </option>
+                            <option value=   "WABI" >   "WABI" </option>
+                            <option value=  "WAVES" >  "WAVES" </option>
+                            <option value=    "WAX" >    "WAX" </option>
+                            <option value=     "WC" >     "WC" </option>
+                            <option value=    "WGR" >    "WGR" </option>
+                            <option value=  "WINGS" >  "WINGS" </option>
+                            <option value=    "WLK" >    "WLK" </option>
+                            <option value=    "WOP" >    "WOP" </option>
+                            <option value=    "WPR" >    "WPR" </option>
+                            <option value=    "WRC" >    "WRC" </option>
+                            <option value=    "WTC" >    "WTC" </option>
+                            <option value=   "XAUR" >   "XAUR" </option>
+                            <option value=    "XBP" >    "XBP" </option>
+                            <option value=    "XBY" >    "XBY" </option>
+                            <option value=    "XCP" >    "XCP" </option>
+                            <option value=   "XCXT" >   "XCXT" </option>
+                            <option value=    "XDN" >    "XDN" </option>
+                            <option value=    "XEM" >    "XEM" </option>
+                            <option value=    "XGB" >    "XGB" </option>
+                            <option value=    "XHI" >    "XHI" </option>
+                            <option value=    "XID" >    "XID" </option>
+                            <option value=    "XLM" >    "XLM" </option>
+                            <option value=    "XMR" >    "XMR" </option>
+                            <option value=    "XNC" >    "XNC" </option>
+                            <option value=    "XRB" >    "XRB" </option>
+                            <option value=    "XRP" >    "XRP" </option>
+                            <option value=    "XTO" >    "XTO" </option>
+                            <option value=    "XTZ" >    "XTZ" </option>
+                            <option value=    "XUC" >    "XUC" </option>
+                            <option value=    "XVG" >    "XVG" </option>
+                            <option value=    "XZC" >    "XZC" </option>
+                            <option value=    "YEE" >    "YEE" </option>
+                            <option value=    "YOC" >    "YOC" </option>
+                            <option value=  "YOYOW" >  "YOYOW" </option>
+                            <option value=    "ZBC" >    "ZBC" </option>
+                            <option value=    "ZCL" >    "ZCL" </option>
+                            <option value=    "ZEC" >    "ZEC" </option>
+                            <option value=    "ZEN" >    "ZEN" </option>
+                            <option value=    "ZIL" >    "ZIL" </option>
+                            <option value=    "ZNY" >    "ZNY" </option>
+                            <option value=    "ZRX" >    "ZRX" </option>
+                            <option value=    "ZSC" >    "ZSC" </option>
+                            <option value=    "611" >    "611" </option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <button class="list-view" id="change-view" style="display:none"> Change View</button>
+
+            </div>
+            
+
+            <div class="col-sm-7">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Currency results</h3>
+                    </div>
+
+                    <div class="list-group" id="comments-list"> </div>
+
+                    <div class="row justify-content-around" id="row-list"> </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        $(document).ready(function(){
+  
+           // var apiKey       = "YOUR_ACCESS_KEY";
+            var cur          = "EUR";
+            var quoteCurName = "ALL";
+            
+            $("#select-cur").change(function(){
+                quoteCurName = $("#select-cur").val();
+                document.getElementById("change-view").style.display = null;
+                doApiRequest(quoteCurName);
+    
+                
+            });
+
+            $("#change-view").click(function(){
+                if(document.getElementById("change-view").classList.contains("list-view")) {
+                    document.getElementById("change-view").classList.remove("list-view");
+                    document.getElementById("change-view").classList.add("icon-view");
+                } else {
+                    document.getElementById("change-view").classList.remove("icon-view");
+                    document.getElementById("change-view").classList.add("list-view");
+                }
+
+                doApiRequest(quoteCurName);
+            });
+
+
+            function doApiRequest(quoteCurName){
+                
+                var myUrl = "http://api.coinlayer.com/api/live?access_key=9950814ecf64f13b033ac3760e585c29";
+
+                if(quoteCurName != "ALL") {
+                    myUrl = myUrl+"&symbols="+quoteCurName;
+                }
+
+                document.getElementById("comments-list").innerHTML = "";
+                document.getElementById("row-list").innerHTML = "";
+
+                $.ajax({
+                    method: "GET",
+                    url: myUrl,
+                    dataType: "json"
+                }).done(function(data){
+                    $.each(data.rates, function(i,item) {
+                        if(document.getElementById("change-view").classList.contains("list-view")) {
+                            $("#comments-list").append('<div class="row"><div class="col">EUR/' + i + '</div><div class="col">Exchange Rate: <input id="rate" value='+ item +'></div></div>');
+                        } else {
+                            $("#row-list").append('<div class="gray-color col-3 mb-3"> <div class="bold-view">EUR/' + i + ' </div><div> Rate: '+ item +' </div></div>');
+                        }
+                    });
+   
+                }).fail(function(){
+                    console.log("failed");
+                });
+            }
+            
+        });
+    
+        
+    
+    </script> 
+
+</body>
+
+</html>
